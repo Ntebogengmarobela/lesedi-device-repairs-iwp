@@ -67,5 +67,113 @@
         </ul>
       </nav>
     </header>
+    <main>
+      <!-- Services -->
+      <section>
+        <h2>Services we offer</h2>
+        <ul>
+          <li>Screen replacement</li>
+          <li>Battery replacement</li>
+          <li>Charging port repair</li>
+          <li>Software reset and data backup</li>
+          <li>Water damage treatment</li>
+        </ul>
+      </section>
+      <!-- Booking procedure -->
+      <section>
+        <h2>Booking Repair Procedure</h2>
+        <ol>
+          <li>Type of device must be selected</li>
+          <li>Select your desired service repair</li>
+          <li>Desired booking date must be selected</li>
+          <li>Review qoute with 15% VAT included</li>
+          <li>Submit booking request</li>
+        </ol>
+      </section>
+      <section>
+        <h2>A breakdown of Repair Fees</h2>
+        <dl>
+          <dt>Diagnostic Fee</dt>
+          <dd>
+            The fee charged to inspect a device and identify a device and
+            identify its problem. The fee depends on the type of device being
+            repaired
+          </dd>
+          <dt>SubTotal</dt>
+          <dd>
+            The diagnostic fee plus the cost of the selected repair services
+            before VAT is added.
+          </dd>
+          <dt>VAT</dt>
+          <dd>Value-Added Tax calculated at 15% of the subtotal.</dd>
+          <dt>Total</dt>
+          <dd>The subtotal plus 15% VAT, giving the final qouted amount.</dd>
+        </dl>
+      </section>
+      <!-- Price table -->
+      <section>
+        <h2>Repair Service Price List</h2>
+        <p>All prices exclude 15% VAT</p>
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th scope="col">Repair Services</th>
+              <th scope="col">Price (excluding VAT)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td>Screen replacement</td>
+                <td>R850</td>
+            </tr>
+            <tr>
+                <td>Battery repacement</td>
+                <td>R450</td>
+            </tr>
+            <tr>
+                <td>Charging port repair</td>
+                <td>R350</td>
+            </tr>
+            <tr>
+                <td>Software reset and data backup</td>
+                <td>R250</td>
+            </tr>
+            <tr>
+                <td>Water damagetreatment</td>
+                <td>R400</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h2>Our work</h2>
+        <img src="img/sr.jpg" alt="Technician repairing a smartphone at Lesedi Device Repairs">
+      </section>
+      <section>
+        <h2>Our repair procedure</h2>
+       <video controls src="media/screen-replacement-procedure.mp4">
+       </video>
+      </section>
+      <section>
+        <h2>Operating Hours</h2>
+        <canvas id="openingBanner" width="400" height="150"></canvas>
+      </section>
+      <script>
+        const canvas = document.getElementById("openingBanner");
+        const ctx = canvas.getContext("2d");
+        ctx.fillRect(0, 0, 400, 150)
+
+        ctx.fillStyle = "white";
+        ctx.font = "bold 14px Monospace";
+        ctx.textAlign ="center";
+        ctx.fillText("Lesedi Device Repairs", 200, 38);
+
+        ctx.font = "bold 21px Monospace";
+        ctx.fillText("Open Monday to Saturday", 200, 75);
+
+        ctx.font ="14px Monospace";
+        ctx.fillText("Come here to get your device working", 200, 105);
+      </script>
+    </main>
   </body>
 </html>

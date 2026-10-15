@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  color: #000000;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  width: 100%;
+  padding: 25px 20px;
+  border-bottom: 1px solid;
+  box-sizing: border-box;
+}
+header > h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+header > nav ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+header > nav ul li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+header > nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+header > nav ul li a:hover span {
+  text-decoration: underline;
+}
+header > nav ul li a span {
+  font-family: monospace;
+}
+
+header > nav .material-icons {
+  display: inline-block;
+  font-size: 20px;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+header > nav svg {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+header > nav ul li i,
+header > nav ul svg {
+  margin-right: 8px !important;
+}
+header > nav ul li svg path {
+  fill: white !important;
+}
+
+#openingBanner{
+    display: block;
+    height: 150px;
+    width:400 !important;
+    
+}
+
+
+#openingBanner {
+  display: block;
+  max-width: 100%; 
+  margin: 20px auto 0 auto; 
+  border: 2px solid black;
+}
+
+main {
+  max-width: 960px; 
+  margin: 0 auto;
+  padding: 40px 20px; 
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+}
+
+
+main > section ul, 
+main > section ol {
+  padding-left: 25px;
+  margin-bottom: 20px;
+}
+
+main > section li {
+  margin-bottom: 8px;
+}
+
+
+main section dl {
+  margin-top: 15px;
+}
+
+main section dt {
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+main section dd {
+  margin-left: 0; 
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+
+.price-table th, 
+.price-table td {
+  border: 1px solid black;
+  padding: 12px;
+  text-align: left;
+}
+
+.price-table th {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.price-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
